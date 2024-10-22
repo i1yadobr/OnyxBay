@@ -196,7 +196,7 @@
 	name = "random pill"
 	desc = "This is a random pill."
 	icon_state = "landmark_pill"
-	spawn_nothing_percentage = 50
+	spawn_nothing_percentage = 75
 
 /obj/random/pill/spawn_choices()
 	return list(/obj/item/reagent_containers/pill/albumin = 4,
@@ -480,7 +480,19 @@
 				/obj/structure/closet/wardrobe/white = 3,
 				/obj/structure/closet/wardrobe/orange = 3,
 				/obj/structure/closet/crate/secure/loot = 1,
-				/obj/structure/closet/secure_closet/freezer/kitchen = 3)
+				/obj/structure/closet/secure_closet/freezer/kitchen = 3,
+				/obj/structure/closet/maintenance/contained = 5,
+				/obj/structure/closet/maintenance/closet/contained = 4,
+				/obj/structure/closet/maintenance/medical/contained = 3,
+				/obj/structure/closet/maintenance/medicalalt/contained = 3,
+				/obj/structure/closet/maintenance/fridge/contained = 3,
+				/obj/structure/closet/maintenance/cargo/contained = 2,
+				/obj/structure/closet/maintenance/security/contained = 1,
+				/obj/structure/closet/maintenance/science/contained = 2,
+				/obj/structure/closet/maintenance/hydro/contained = 2,
+				/obj/structure/closet/maintenance/engineering/contained = 2,
+				/obj/structure/closet/maintenance/bio/contained = 2,
+				/obj/structure/closet/maintenance/nanotrasen/contained = 1)
 
 /obj/random/coin
 	name = "random coin"
