@@ -192,6 +192,34 @@
 				/obj/item/storage/firstaid/fire = 6,
 				/obj/item/storage/firstaid/antirad = 2)
 
+/obj/random/pill
+	name = "random pill"
+	desc = "This is a random pill."
+	icon_state = "landmark_pill"
+	spawn_nothing_percentage = 50
+
+/obj/random/pill/spawn_choices()
+	return list(/obj/item/reagent_containers/pill/albumin = 4,
+				/obj/item/reagent_containers/pill/bicaridine = 3,
+				/obj/item/reagent_containers/pill/dermaline = 3,
+				/obj/item/reagent_containers/pill/dexalin_plus = 3,
+				/obj/item/reagent_containers/pill/dylovene = 4,
+				/obj/item/reagent_containers/pill/hyronalin = 2,
+				/obj/item/reagent_containers/pill/inaprovaline = 2,
+				/obj/item/reagent_containers/pill/noexcutite = 2,
+				/obj/item/reagent_containers/pill/paracetamol = 4,
+				/obj/item/reagent_containers/pill/happy = 5,
+				/obj/item/reagent_containers/pill/zoom = 5,
+				/obj/item/reagent_containers/pill/peridaxon = 1,
+				/obj/item/reagent_containers/pill/spaceacillin = 3,
+				/obj/item/reagent_containers/pill/tricordrazine = 4,
+				/obj/item/reagent_containers/pill/citalopram = 4,
+				/obj/item/reagent_containers/pill/antidexafen = 4,
+				/obj/item/reagent_containers/pill/oxycodone = 1,
+				/obj/item/reagent_containers/pill/tramadol = 2,
+				/obj/item/reagent_containers/pill/alkysine = 1,
+				/obj/item/reagent_containers/pill/imidazoline = 1) //More drug pills could be added in the future, or something similar to “maintenance pills” could be added
+
 /obj/random/contraband
 	name = "random illegal item"
 	desc = "Hot Stuff."
