@@ -196,7 +196,7 @@
 	name = "random pill"
 	desc = "This is a random pill."
 	icon_state = "landmark_pill"
-	spawn_nothing_percentage = 75
+	spawn_nothing_percentage = 50
 
 /obj/random/pill/spawn_choices()
 	return list(/obj/item/reagent_containers/pill/albumin = 4,
