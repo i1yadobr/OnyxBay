@@ -5,7 +5,9 @@
 	icon_closed = "maint"
 	icon_opened = "maintopen"
 
-/obj/structure/closet/maintenance/contained/New()
+/obj/structure/closet/maintenance/prefilled
+
+/obj/structure/closet/maintenance/prefilled/New()
 	..()
 
 	new /obj/random/junk(src)
@@ -23,7 +25,9 @@
 	icon_closed = "maintcloset"
 	icon_opened = "maintclosetopen"
 
-/obj/structure/closet/maintenance/closet/contained/New()
+/obj/structure/closet/maintenance/closet/prefilled
+
+/obj/structure/closet/maintenance/closet/prefilled/New()
 	..()
 
 	new /obj/random/junk(src)
@@ -40,7 +44,9 @@
 	icon_closed = "maintmedical"
 	icon_opened = "maintmedicalopen"
 
-/obj/structure/closet/maintenance/medical/contained/New()
+/obj/structure/closet/maintenance/medical/prefilled
+
+/obj/structure/closet/maintenance/medical/prefilled/New()
 	..()
 
 	new /obj/random/junk(src)
@@ -65,7 +71,9 @@
 	icon_closed = "maintmedicalalt"
 	icon_opened = "maintmedicalaltopen"
 
-/obj/structure/closet/maintenance/medicalalt/contained/New()
+/obj/structure/closet/maintenance/medicalalt/prefilled
+
+/obj/structure/closet/maintenance/medicalalt/prefilled/New()
 	..()
 
 	new /obj/random/junk(src)
@@ -94,7 +102,9 @@
 	icon_closed = "maintfridge"
 	icon_opened = "maintfridgeopen"
 
-/obj/structure/closet/maintenance/fridge/contained/New()
+/obj/structure/closet/maintenance/fridge/prefilled
+
+/obj/structure/closet/maintenance/fridge/prefilled/New()
 	..()
 
 	new /obj/random/junk(src)
@@ -122,7 +132,9 @@
 	icon_closed = "maintcargo"
 	icon_opened = "maintcargoopen"
 
-/obj/structure/closet/maintenance/cargo/contained/New()
+/obj/structure/closet/maintenance/cargo/prefilled
+
+/obj/structure/closet/maintenance/cargo/prefilled/New()
 	..()
 
 	new /obj/random/junk(src)
@@ -150,7 +162,9 @@
 	icon_closed = "maintsec"
 	icon_opened = "maintsecopen"
 
-/obj/structure/closet/maintenance/security/contained/New()
+/obj/structure/closet/maintenance/security/prefilled
+
+/obj/structure/closet/maintenance/security/prefilled/New()
 	..()
 
 	new /obj/random/junk(src)
@@ -182,7 +196,9 @@
 	icon_closed = "maintscience"
 	icon_opened = "maintscienceopen"
 
-/obj/structure/closet/maintenance/science/contained/New()
+/obj/structure/closet/maintenance/science/prefilled
+
+/obj/structure/closet/maintenance/science/prefilled/New()
 	..()
 
 	new /obj/random/junk(src)
@@ -213,13 +229,14 @@
 	icon_closed = "mainthydro"
 	icon_opened = "mainthydroopen"
 
-/obj/structure/closet/maintenance/hydro/contained/New()
+/obj/structure/closet/maintenance/hydro/prefilled
+
+/obj/structure/closet/maintenance/hydro/prefilled/New()
 	..()
 
 	new /obj/random/junk(src)
 	new /obj/random/junk(src)
 	new /obj/random/junk(src)
-	new /obj/item/seeds/random(src)
 	new /obj/item/seeds/random(src)
 
 	if(prob(80))
@@ -245,7 +262,9 @@
 	icon_closed = "mainteng"
 	icon_opened = "maintengopen"
 
-/obj/structure/closet/maintenance/engineering/contained/New()
+/obj/structure/closet/maintenance/engineering/prefilled
+
+/obj/structure/closet/maintenance/engineering/prefilled/New()
 	..()
 
 	new /obj/random/junk(src)
@@ -273,7 +292,9 @@
 	icon_closed = "maintbio"
 	icon_opened = "maintbioopen"
 
-/obj/structure/closet/maintenance/bio/contained/New()
+/obj/structure/closet/maintenance/bio/prefilled
+
+/obj/structure/closet/maintenance/bio/prefilled/New()
 	..()
 
 	new /obj/random/junk(src)
@@ -302,7 +323,9 @@
 	icon_closed = "maintnt"
 	icon_opened = "maintntopen"
 
-/obj/structure/closet/maintenance/nanotrasen/contained/New()
+/obj/structure/closet/maintenance/nanotrasen/prefilled
+
+/obj/structure/closet/maintenance/nanotrasen/prefilled/New()
 	..()
 
 	new /obj/random/junk(src)

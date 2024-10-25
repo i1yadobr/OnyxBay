@@ -481,18 +481,18 @@
 				/obj/structure/closet/wardrobe/orange = 3,
 				/obj/structure/closet/crate/secure/loot = 1,
 				/obj/structure/closet/secure_closet/freezer/kitchen = 3,
-				/obj/structure/closet/maintenance/contained = 5,
-				/obj/structure/closet/maintenance/closet/contained = 4,
-				/obj/structure/closet/maintenance/medical/contained = 3,
-				/obj/structure/closet/maintenance/medicalalt/contained = 3,
-				/obj/structure/closet/maintenance/fridge/contained = 3,
-				/obj/structure/closet/maintenance/cargo/contained = 2,
-				/obj/structure/closet/maintenance/security/contained = 1,
-				/obj/structure/closet/maintenance/science/contained = 2,
-				/obj/structure/closet/maintenance/hydro/contained = 2,
-				/obj/structure/closet/maintenance/engineering/contained = 2,
-				/obj/structure/closet/maintenance/bio/contained = 2,
-				/obj/structure/closet/maintenance/nanotrasen/contained = 1)
+				/obj/structure/closet/maintenance/prefilled = 5,
+				/obj/structure/closet/maintenance/closet/prefilled = 4,
+				/obj/structure/closet/maintenance/medical/prefilled = 3,
+				/obj/structure/closet/maintenance/medicalalt/prefilled = 3,
+				/obj/structure/closet/maintenance/fridge/prefilled = 3,
+				/obj/structure/closet/maintenance/cargo/prefilled = 2,
+				/obj/structure/closet/maintenance/security/prefilled = 1,
+				/obj/structure/closet/maintenance/science/prefilled = 2,
+				/obj/structure/closet/maintenance/hydro/prefilled = 2,
+				/obj/structure/closet/maintenance/engineering/prefilled = 2,
+				/obj/structure/closet/maintenance/bio/prefilled = 2,
+				/obj/structure/closet/maintenance/nanotrasen/prefilled = 1)
 
 /obj/random/coin
 	name = "random coin"
