@@ -483,7 +483,6 @@
 				/obj/structure/closet/maintenance/prefilled = 5,
 				/obj/structure/closet/maintenance/closet/prefilled = 4,
 				/obj/structure/closet/maintenance/medical/prefilled = 3,
-				/obj/structure/closet/maintenance/medicalalt/prefilled = 3,
 				/obj/structure/closet/maintenance/fridge/prefilled = 3,
 				/obj/structure/closet/maintenance/cargo/prefilled = 2,
 				/obj/structure/closet/maintenance/security/prefilled = 1,

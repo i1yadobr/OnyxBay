@@ -7,18 +7,25 @@
 
 /obj/structure/closet/maintenance/prefilled
 
-/obj/structure/closet/maintenance/prefilled/New()
-	..()
+/obj/structure/closet/maintenance/prefilled/WillContain()
+	return list(
+		/obj/item/storage/box/pillbottles = 2,
+		/obj/item/reagent_containers/vessel/beaker/cryoxadone,
+		/obj/random/medical = 12
+	)
 
-	new /obj/random/junk(src)
-	new /obj/random/junk(src)
-	new /obj/random/junk(src)
-	new /obj/random/junk(src)
-	new /obj/random/junk(src)
-	new /obj/random/cash(src)
-	new /obj/random/music_tape(src)
-	new /obj/random/maintenance/clean(src)
-	new /obj/random/maintenance/clean(src)
+// /obj/structure/closet/maintenance/prefilled/New()
+// 	..()
+
+// 	new /obj/random/junk(src)
+// 	new /obj/random/junk(src)
+// 	new /obj/random/junk(src)
+// 	new /obj/random/junk(src)
+// 	new /obj/random/junk(src)
+// 	new /obj/random/cash(src)
+// 	new /obj/random/music_tape(src)
+// 	new /obj/random/maintenance/clean(src)
+// 	new /obj/random/maintenance/clean(src)
 
 /obj/structure/closet/maintenance/closet
 	icon_state = "maintcloset"
@@ -27,17 +34,17 @@
 
 /obj/structure/closet/maintenance/closet/prefilled
 
-/obj/structure/closet/maintenance/closet/prefilled/New()
-	..()
+// /obj/structure/closet/maintenance/closet/prefilled/New()
+// 	..()
 
-	new /obj/random/junk(src)
-	new /obj/random/junk(src)
-	new /obj/random/junk(src)
-	new /obj/random/cash(src)
-	new /obj/random/snack(src)
-	new /obj/random/tech_supply(src)
-	new /obj/random/drinkbottle(src)
-	new /obj/random/maintenance/clean(src)
+// 	new /obj/random/junk(src)
+// 	new /obj/random/junk(src)
+// 	new /obj/random/junk(src)
+// 	new /obj/random/cash(src)
+// 	new /obj/random/snack(src)
+// 	new /obj/random/tech_supply(src)
+// 	new /obj/random/drinkbottle(src)
+// 	new /obj/random/maintenance/clean(src)
 
 /obj/structure/closet/maintenance/medical
 	icon_state = "maintmedical"
@@ -46,54 +53,51 @@
 
 /obj/structure/closet/maintenance/medical/prefilled
 
-/obj/structure/closet/maintenance/medical/prefilled/New()
-	..()
+// /obj/structure/closet/maintenance/medical/prefilled/New()
+// 	..()
 
-	new /obj/random/junk(src)
-	new /obj/random/junk(src)
-	new /obj/random/junk(src)
-	new /obj/random/pill(src)
-	new /obj/random/firstaid(src)
+// 	if(prob(50))
+// 		icon_state = "maintmedicalalt"
+// 		icon_closed = "maintmedicalalt"
+// 		icon_opened = "maintmedicalaltopen"
 
-	if(prob(70))
-		new /obj/item/clothing/suit/storage/toggle/labcoat(src)
-	if(prob(60))
-		new /obj/item/clothing/gloves/latex/nitrile(src)
-		new /obj/item/clothing/mask/surgical(src)
-	if(prob(40))
-		new /obj/item/clothing/accessory/storage/white_vest/alt(src)
-	if(prob(30))
-		new /obj/item/storage/box/syringes(src)
-		new /obj/item/storage/box/autoinjectors(src)
+// 		new /obj/random/junk(src)
+// 		new /obj/random/junk(src)
+// 		new /obj/random/junk(src)
+// 		new /obj/random/pill(src)
+// 		new /obj/random/pill(src)
+// 		new /obj/random/pill(src)
+// 		new /obj/random/medical/lite(src)
+// 		new /obj/random/medical/lite(src)
+// 		new /obj/random/medical/lite(src)
 
-/obj/structure/closet/maintenance/medicalalt
-	icon_state = "maintmedicalalt"
-	icon_closed = "maintmedicalalt"
-	icon_opened = "maintmedicalaltopen"
+// 		if(prob(5))
+// 			new /obj/item/reagent_containers/hypospray/autoinjector/bicaridine(src)
+// 		if(prob(5))
+// 			new /obj/item/reagent_containers/hypospray/autoinjector/dermaline(src)
+// 		if(prob(5))
+// 			new /obj/item/reagent_containers/hypospray/autoinjector/dexalinp(src)
+// 		if(prob(5))
+// 			new /obj/item/reagent_containers/hypospray/autoinjector/pain(src)
 
-/obj/structure/closet/maintenance/medicalalt/prefilled
+// 		return
 
-/obj/structure/closet/maintenance/medicalalt/prefilled/New()
-	..()
+// 	new /obj/random/junk(src)
+// 	new /obj/random/junk(src)
+// 	new /obj/random/junk(src)
+// 	new /obj/random/pill(src)
+// 	new /obj/random/firstaid(src)
 
-	new /obj/random/junk(src)
-	new /obj/random/junk(src)
-	new /obj/random/junk(src)
-	new /obj/random/pill(src)
-	new /obj/random/pill(src)
-	new /obj/random/pill(src)
-	new /obj/random/medical/lite(src)
-	new /obj/random/medical/lite(src)
-	new /obj/random/medical/lite(src)
-
-	if(prob(5))
-		new /obj/item/reagent_containers/hypospray/autoinjector/bicaridine(src)
-	if(prob(5))
-		new /obj/item/reagent_containers/hypospray/autoinjector/dermaline(src)
-	if(prob(5))
-		new /obj/item/reagent_containers/hypospray/autoinjector/dexalinp(src)
-	if(prob(5))
-		new /obj/item/reagent_containers/hypospray/autoinjector/pain(src)
+// 	if(prob(70))
+// 		new /obj/item/clothing/suit/storage/toggle/labcoat(src)
+// 	if(prob(60))
+// 		new /obj/item/clothing/gloves/latex/nitrile(src)
+// 		new /obj/item/clothing/mask/surgical(src)
+// 	if(prob(40))
+// 		new /obj/item/clothing/accessory/storage/white_vest/alt(src)
+// 	if(prob(30))
+// 		new /obj/item/storage/box/syringes(src)
+// 		new /obj/item/storage/box/autoinjectors(src)
 
 /obj/structure/closet/maintenance/fridge
 	name = "abandoned fridge"
@@ -104,28 +108,28 @@
 
 /obj/structure/closet/maintenance/fridge/prefilled
 
-/obj/structure/closet/maintenance/fridge/prefilled/New()
-	..()
+// /obj/structure/closet/maintenance/fridge/prefilled/New()
+// 	..()
 
-	new /obj/random/junk(src)
-	new /obj/random/junk(src)
-	new /obj/random/junk(src)
-	new /obj/random/snack(src)
-	new /obj/random/snack(src)
-	new /obj/random/snack(src)
+// 	new /obj/random/junk(src)
+// 	new /obj/random/junk(src)
+// 	new /obj/random/junk(src)
+// 	new /obj/random/snack(src)
+// 	new /obj/random/snack(src)
+// 	new /obj/random/snack(src)
 
-	if(prob(60))
-		new /obj/item/reagent_containers/food/packaged/sosjerky(src)
-	if(prob(50))
-		new /obj/item/reagent_containers/food/meat/monkey(src)
-		new /obj/item/reagent_containers/food/cheesewedge(src)
-	if(prob(40))
-		new /obj/item/reagent_containers/food/packaged/nutribar(src)
-		new /obj/item/reagent_containers/food/packaged/hematogen(src)
-	if(prob(5))
-		new /obj/item/material/knife/butch/kitchen(src)
-	if(prob(5))
-		new /obj/item/reagent_containers/food/meat/human(src)
+// 	if(prob(60))
+// 		new /obj/item/reagent_containers/food/packaged/sosjerky(src)
+// 	if(prob(50))
+// 		new /obj/item/reagent_containers/food/meat/monkey(src)
+// 		new /obj/item/reagent_containers/food/cheesewedge(src)
+// 	if(prob(40))
+// 		new /obj/item/reagent_containers/food/packaged/nutribar(src)
+// 		new /obj/item/reagent_containers/food/packaged/hematogen(src)
+// 	if(prob(5))
+// 		new /obj/item/material/knife/butch/kitchen(src)
+// 	if(prob(5))
+// 		new /obj/item/reagent_containers/food/meat/human(src)
 
 /obj/structure/closet/maintenance/cargo
 	icon_state = "maintcargo"
@@ -134,28 +138,28 @@
 
 /obj/structure/closet/maintenance/cargo/prefilled
 
-/obj/structure/closet/maintenance/cargo/prefilled/New()
-	..()
+// /obj/structure/closet/maintenance/cargo/prefilled/New()
+// 	..()
 
-	new /obj/random/junk(src)
-	new /obj/random/junk(src)
-	new /obj/random/junk(src)
-	new /obj/random/cash(src)
-	new /obj/random/smokes(src)
+// 	new /obj/random/junk(src)
+// 	new /obj/random/junk(src)
+// 	new /obj/random/junk(src)
+// 	new /obj/random/cash(src)
+// 	new /obj/random/smokes(src)
 
-	if(prob(75))
-		new /obj/item/storage/box(src)
-		new /obj/item/pen/multi(src)
-	if(prob(60))
-		new /obj/item/clothing/accessory/armband/cargo(src)
-		new /obj/item/clothing/gloves/thick(src)
-		new /obj/item/storage/backpack/dufflebag(src)
-	if(prob(40))
-		new /obj/item/tape_roll(src)
-		new /obj/item/packageWrap(src)
-		new /obj/item/hand_labeler(src)
-	if(prob(10))
-		new /obj/item/material/twohanded/baseballbat/metal(src)
+// 	if(prob(75))
+// 		new /obj/item/storage/box(src)
+// 		new /obj/item/pen/multi(src)
+// 	if(prob(60))
+// 		new /obj/item/clothing/accessory/armband/cargo(src)
+// 		new /obj/item/clothing/gloves/thick(src)
+// 		new /obj/item/storage/backpack/dufflebag(src)
+// 	if(prob(40))
+// 		new /obj/item/tape_roll(src)
+// 		new /obj/item/packageWrap(src)
+// 		new /obj/item/hand_labeler(src)
+// 	if(prob(10))
+// 		new /obj/item/material/twohanded/baseballbat/metal(src)
 
 /obj/structure/closet/maintenance/security
 	icon_state = "maintsec"
@@ -164,32 +168,32 @@
 
 /obj/structure/closet/maintenance/security/prefilled
 
-/obj/structure/closet/maintenance/security/prefilled/New()
-	..()
+// /obj/structure/closet/maintenance/security/prefilled/New()
+// 	..()
 
-	new /obj/random/junk(src)
-	new /obj/random/junk(src)
-	new /obj/random/junk(src)
-	new /obj/random/cash(src)
+// 	new /obj/random/junk(src)
+// 	new /obj/random/junk(src)
+// 	new /obj/random/junk(src)
+// 	new /obj/random/cash(src)
 
-	if(prob(70))
-		new /obj/item/storage/secure/briefcase(src)
-	if(prob(40))
-		new /obj/item/clothing/accessory/storage/black_vest/alt(src)
-	if(prob(30))
-		new /obj/item/storage/box/security(src)
-		new /obj/item/device/taperecorder(src)
-	if(prob(25))
-		new /obj/item/grenade/smokebomb(src)
-		new /obj/item/device/flashlight/maglight(src)
-		new /obj/item/cell/device/high(src)
-	if(prob(10))
-		new /obj/item/clothing/head/helmet(src)
-		new /obj/item/clothing/suit/armor/vest(src)
-	if(prob(5))
-		new /obj/item/storage/secure/briefcase/money(src)
-	if(prob(1))
-		new /obj/item/melee/baton(src)
+// 	if(prob(70))
+// 		new /obj/item/storage/secure/briefcase(src)
+// 	if(prob(40))
+// 		new /obj/item/clothing/accessory/storage/black_vest/alt(src)
+// 	if(prob(30))
+// 		new /obj/item/storage/box/security(src)
+// 		new /obj/item/device/taperecorder(src)
+// 	if(prob(25))
+// 		new /obj/item/grenade/smokebomb(src)
+// 		new /obj/item/device/flashlight/maglight(src)
+// 		new /obj/item/cell/device/high(src)
+// 	if(prob(10))
+// 		new /obj/item/clothing/head/helmet(src)
+// 		new /obj/item/clothing/suit/armor/vest(src)
+// 	if(prob(5))
+// 		new /obj/item/storage/secure/briefcase/money(src)
+// 	if(prob(1))
+// 		new /obj/item/melee/baton(src)
 
 /obj/structure/closet/maintenance/science
 	icon_state = "maintscience"
@@ -198,31 +202,31 @@
 
 /obj/structure/closet/maintenance/science/prefilled
 
-/obj/structure/closet/maintenance/science/prefilled/New()
-	..()
+// /obj/structure/closet/maintenance/science/prefilled/New()
+// 	..()
 
-	new /obj/random/junk(src)
-	new /obj/random/junk(src)
-	new /obj/random/junk(src)
+// 	new /obj/random/junk(src)
+// 	new /obj/random/junk(src)
+// 	new /obj/random/junk(src)
 
-	if(prob(60))
-		new /obj/item/circuitboard/protolathe(src)
-		new /obj/item/stack/material/glass/ten(src)
-		new /obj/item/stack/material/steel/ten(src)
-	if(prob(30))
-		new /obj/item/clothing/glasses/hud/standard/science(src)
-	if(prob(15))
-		new /obj/item/rcd_upgrade/anti_interrupt(src)
-	if(prob(15))
-		new /obj/item/rcd_upgrade/cooling(src)
-	if(prob(15))
-		new /obj/item/rcd_upgrade/frames(src)
-	if(prob(15))
-		new /obj/item/rcd_upgrade/furnishing(src)
-	if(prob(15))
-		new /obj/item/rcd_upgrade/simple_circuits(src)
-	if(prob(5))
-		new /obj/item/cell/infinite(src)
+// 	if(prob(60))
+// 		new /obj/item/circuitboard/protolathe(src)
+// 		new /obj/item/stack/material/glass/ten(src)
+// 		new /obj/item/stack/material/steel/ten(src)
+// 	if(prob(30))
+// 		new /obj/item/clothing/glasses/hud/standard/science(src)
+// 	if(prob(15))
+// 		new /obj/item/rcd_upgrade/anti_interrupt(src)
+// 	if(prob(15))
+// 		new /obj/item/rcd_upgrade/cooling(src)
+// 	if(prob(15))
+// 		new /obj/item/rcd_upgrade/frames(src)
+// 	if(prob(15))
+// 		new /obj/item/rcd_upgrade/furnishing(src)
+// 	if(prob(15))
+// 		new /obj/item/rcd_upgrade/simple_circuits(src)
+// 	if(prob(5))
+// 		new /obj/item/cell/infinite(src)
 
 /obj/structure/closet/maintenance/hydro
 	icon_state = "mainthydro"
@@ -231,31 +235,31 @@
 
 /obj/structure/closet/maintenance/hydro/prefilled
 
-/obj/structure/closet/maintenance/hydro/prefilled/New()
-	..()
+// /obj/structure/closet/maintenance/hydro/prefilled/New()
+// 	..()
 
-	new /obj/random/junk(src)
-	new /obj/random/junk(src)
-	new /obj/random/junk(src)
-	new /obj/item/seeds/random(src)
+// 	new /obj/random/junk(src)
+// 	new /obj/random/junk(src)
+// 	new /obj/random/junk(src)
+// 	new /obj/item/seeds/random(src)
 
-	if(prob(80))
-		new /obj/item/clothing/accessory/armband/hydro(src)
-		new /obj/item/clothing/gloves/thick/botany(src)
-	if(prob(60))
-		new /obj/item/storage/plants(src)
-		new /obj/item/material/minihoe(src)
-		new /obj/item/device/analyzer/plant_analyzer(src)
-	if(prob(40))
-		new /obj/item/material/hatchet(src)
-	if(prob(35))
-		new /obj/item/reagent_containers/vessel/plastic/eznutrient(src)
-	if(prob(30))
-		new /obj/item/reagent_containers/vessel/plastic/robustharvest(src)
-	if(prob(25))
-		new /obj/item/reagent_containers/vessel/plastic/left4zed(src)
-	if(prob(20))
-		new /obj/structure/flora/pottedplant/dead(src)
+// 	if(prob(80))
+// 		new /obj/item/clothing/accessory/armband/hydro(src)
+// 		new /obj/item/clothing/gloves/thick/botany(src)
+// 	if(prob(60))
+// 		new /obj/item/storage/plants(src)
+// 		new /obj/item/material/minihoe(src)
+// 		new /obj/item/device/analyzer/plant_analyzer(src)
+// 	if(prob(40))
+// 		new /obj/item/material/hatchet(src)
+// 	if(prob(35))
+// 		new /obj/item/reagent_containers/vessel/plastic/eznutrient(src)
+// 	if(prob(30))
+// 		new /obj/item/reagent_containers/vessel/plastic/robustharvest(src)
+// 	if(prob(25))
+// 		new /obj/item/reagent_containers/vessel/plastic/left4zed(src)
+// 	if(prob(20))
+// 		new /obj/structure/flora/pottedplant/dead(src)
 
 /obj/structure/closet/maintenance/engineering
 	icon_state = "mainteng"
@@ -264,28 +268,28 @@
 
 /obj/structure/closet/maintenance/engineering/prefilled
 
-/obj/structure/closet/maintenance/engineering/prefilled/New()
-	..()
+// /obj/structure/closet/maintenance/engineering/prefilled/New()
+// 	..()
 
-	new /obj/random/junk(src)
-	new /obj/random/junk(src)
-	new /obj/random/junk(src)
-	new /obj/random/toolbox(src)
+// 	new /obj/random/junk(src)
+// 	new /obj/random/junk(src)
+// 	new /obj/random/junk(src)
+// 	new /obj/random/toolbox(src)
 
-	if(prob(60))
-		new /obj/item/clothing/gloves/insulated/cheap(src)
-		new /obj/item/clothing/head/beret/engineering(src)
-		new /obj/item/clothing/mask/gas(src)
-	if(prob(40))
-		new /obj/item/device/flashlight/upgraded(src)
-		new /obj/item/storage/belt/utility(src)
-	if(prob(30))
-		new /obj/item/clothing/accessory/storage/brown_vest/alt(src)
-		new /obj/item/device/multitool(src)
-	if(prob(10))
-		new /obj/item/clothing/gloves/insulated(src)
-	if(prob(3))
-		new /obj/item/clothing/suit/space/void/engineering/alt/prepared(src)
+// 	if(prob(60))
+// 		new /obj/item/clothing/gloves/insulated/cheap(src)
+// 		new /obj/item/clothing/head/beret/engineering(src)
+// 		new /obj/item/clothing/mask/gas(src)
+// 	if(prob(40))
+// 		new /obj/item/device/flashlight/upgraded(src)
+// 		new /obj/item/storage/belt/utility(src)
+// 	if(prob(30))
+// 		new /obj/item/clothing/accessory/storage/brown_vest/alt(src)
+// 		new /obj/item/device/multitool(src)
+// 	if(prob(10))
+// 		new /obj/item/clothing/gloves/insulated(src)
+// 	if(prob(3))
+// 		new /obj/item/clothing/suit/space/void/engineering/alt/prepared(src)
 
 /obj/structure/closet/maintenance/bio
 	icon_state = "maintbio"
@@ -294,28 +298,28 @@
 
 /obj/structure/closet/maintenance/bio/prefilled
 
-/obj/structure/closet/maintenance/bio/prefilled/New()
-	..()
+// /obj/structure/closet/maintenance/bio/prefilled/New()
+// 	..()
 
-	new /obj/random/junk(src)
-	new /obj/random/junk(src)
-	new /obj/random/junk(src)
-	new /obj/random/firstaid
+// 	new /obj/random/junk(src)
+// 	new /obj/random/junk(src)
+// 	new /obj/random/junk(src)
+// 	new /obj/random/firstaid
 
-	if(prob(75))
-		new /obj/item/clothing/head/bio_hood/general(src)
-		new /obj/item/clothing/suit/bio_suit/general(src)
-	if(prob(50))
-		new /obj/item/clothing/mask/gas/clear(src)
-		new /obj/item/tank/emergency/oxygen/double(src)
-	if(prob(35))
-		new /obj/item/storage/box/masks(src)
-	if(prob(30))
-		new /obj/item/storage/box/gloves(src)
-	if(prob(25))
-		new /obj/item/storage/box/syringes(src)
-	if(prob(15))
-		new /obj/item/clothing/glasses/hud/one_eyed/oneye/medical(src)
+// 	if(prob(75))
+// 		new /obj/item/clothing/head/bio_hood/general(src)
+// 		new /obj/item/clothing/suit/bio_suit/general(src)
+// 	if(prob(50))
+// 		new /obj/item/clothing/mask/gas/clear(src)
+// 		new /obj/item/tank/emergency/oxygen/double(src)
+// 	if(prob(35))
+// 		new /obj/item/storage/box/masks(src)
+// 	if(prob(30))
+// 		new /obj/item/storage/box/gloves(src)
+// 	if(prob(25))
+// 		new /obj/item/storage/box/syringes(src)
+// 	if(prob(15))
+// 		new /obj/item/clothing/glasses/hud/one_eyed/oneye/medical(src)
 
 /obj/structure/closet/maintenance/nanotrasen
 	desc = "A forgotten and unwanted closet. Looks stylish enough for its age."
@@ -325,31 +329,31 @@
 
 /obj/structure/closet/maintenance/nanotrasen/prefilled
 
-/obj/structure/closet/maintenance/nanotrasen/prefilled/New()
-	..()
+// /obj/structure/closet/maintenance/nanotrasen/prefilled/New()
+// 	..()
 
-	new /obj/random/junk(src)
-	new /obj/random/junk(src)
-	new /obj/random/junk(src)
-	new /obj/random/cash(src)
-	new /obj/random/drinkbottle
+// 	new /obj/random/junk(src)
+// 	new /obj/random/junk(src)
+// 	new /obj/random/junk(src)
+// 	new /obj/random/cash(src)
+// 	new /obj/random/drinkbottle
 
-	if(prob(80))
-		new /obj/item/device/radio/headset(src)
-		new /obj/item/cane(src)
-	if(prob(60))
-		new /obj/item/clothing/head/soft/sec/corp/guard(src)
-		new /obj/item/clothing/accessory/armband/whitered(src)
-		new /obj/item/storage/backpack/nanotrasen(src)
-	if(prob(50))
-		new /obj/item/clothing/under/track_pants/trackpantswhite(src)
-		new /obj/item/clothing/gloves/white(src)
-		new /obj/item/clothing/shoes/white(src)
-	if(prob(40))
-		new /obj/item/storage/briefcase(src)
-		new /obj/item/book/wiki/chain_of_command(src)
-		new /obj/item/book/wiki/nt_regs(src)
-	if(prob(25))
-		new /obj/item/clothing/accessory/holster/thigh(src)
-	if(prob(10))
-		new /obj/item/clothing/suit/armor/pcarrier/light/budget(src)
+// 	if(prob(80))
+// 		new /obj/item/device/radio/headset(src)
+// 		new /obj/item/cane(src)
+// 	if(prob(60))
+// 		new /obj/item/clothing/head/soft/sec/corp/guard(src)
+// 		new /obj/item/clothing/accessory/armband/whitered(src)
+// 		new /obj/item/storage/backpack/nanotrasen(src)
+// 	if(prob(50))
+// 		new /obj/item/clothing/under/track_pants/trackpantswhite(src)
+// 		new /obj/item/clothing/gloves/white(src)
+// 		new /obj/item/clothing/shoes/white(src)
+// 	if(prob(40))
+// 		new /obj/item/storage/briefcase(src)
+// 		new /obj/item/book/wiki/chain_of_command(src)
+// 		new /obj/item/book/wiki/nt_regs(src)
+// 	if(prob(25))
+// 		new /obj/item/clothing/accessory/holster/thigh(src)
+// 	if(prob(10))
+// 		new /obj/item/clothing/suit/armor/pcarrier/light/budget(src)
