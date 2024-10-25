@@ -194,7 +194,6 @@
 
 /obj/random/pill
 	name = "random pill"
-	desc = "This is a random pill."
 	icon_state = "landmark_pill"
 	spawn_nothing_percentage = 50
 
