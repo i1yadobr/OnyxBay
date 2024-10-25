@@ -218,7 +218,7 @@
 				/obj/item/reagent_containers/pill/oxycodone = 1,
 				/obj/item/reagent_containers/pill/tramadol = 2,
 				/obj/item/reagent_containers/pill/alkysine = 1,
-				/obj/item/reagent_containers/pill/imidazoline = 1) //More drug pills could be added in the future, or something similar to “maintenance pills” could be added
+				/obj/item/reagent_containers/pill/imidazoline = 1)
 
 /obj/random/contraband
 	name = "random illegal item"
