@@ -9,9 +9,7 @@
 
 /obj/structure/closet/maintenance/prefilled/WillContain()
 	return list(
-		/obj/item/storage/box/pillbottles = 2,
-		/obj/item/reagent_containers/vessel/beaker/cryoxadone,
-		/obj/random/medical = 12
+		/obj/random/medical = rand(1,8)
 	)
 
 // /obj/structure/closet/maintenance/prefilled/New()
