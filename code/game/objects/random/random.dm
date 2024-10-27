@@ -135,6 +135,31 @@
 				/obj/random/tool = 5,
 				/obj/item/tape_roll = 2)
 
+/obj/random/computer_hardware
+	name = "random computer hardware"
+	icon_state = "landmark_hardware"
+	spawn_nothing_percentage = 33
+
+/obj/random/computer_hardware/spawn_choices()
+	return list(/obj/item/computer_hardware/ai_slot = 3,
+				/obj/item/computer_hardware/battery_module = 2,
+				/obj/item/computer_hardware/battery_module/advanced = 2,
+				/obj/item/computer_hardware/battery_module/micro = 2,
+				/obj/item/computer_hardware/battery_module/nano = 2,
+				/obj/item/computer_hardware/card_slot = 2,
+				/obj/item/computer_hardware/hard_drive = 2,
+				/obj/item/computer_hardware/hard_drive/advanced = 2,
+				/obj/item/computer_hardware/hard_drive/micro = 2,
+				/obj/item/computer_hardware/hard_drive/small = 2,
+				/obj/item/computer_hardware/hard_drive/portable = 2,
+				/obj/item/computer_hardware/nano_printer = 2,
+				/obj/item/computer_hardware/network_card = 2,
+				/obj/item/computer_hardware/processor_unit = 2,
+				/obj/item/computer_hardware/processor_unit/small = 2,
+				/obj/item/computer_hardware/tesla_link = 2,
+				/obj/item/modular_computer/tablet = 2,
+				/obj/item/modular_computer/laptop = 2)
+
 /obj/random/medical
 	name = "random medical equipment"
 	desc = "This is a random medical item."
@@ -492,111 +517,106 @@
 				/obj/structure/closet/maintenance/bio/prefilled = 2,
 				/obj/structure/closet/maintenance/nanotrasen/prefilled = 1)
 
-/obj/random/closet/maint
+/obj/random/maint
 
 	name = "random maintenance trash"
-	icon_state = "landmark_garbage"
+	icon_state = "landmark_maint"
 
-/obj/random/closet/maint/spawn_choices()
+/obj/random/maint/spawn_choices()
 	return list(/obj/random/junk = 10,
-				/obj/random/tool = 10)
+				/obj/random/cash = 5,
+				/obj/random/maintenance/clean = 5,
+				/obj/random/music_tape = 1)
 
-/obj/random/closet/maint/closet
+/obj/random/maint/closet
 
 	name = "random maintenance closet trash"
-	icon_state = "landmark_garbage"
 
-/obj/random/closet/maint/closet/spawn_choices()
+/obj/random/maint/closet/spawn_choices()
 	return list(/obj/random/junk = 10,
-				/obj/random/tool = 10)
+				/obj/random/cash = 10,
+				/obj/random/snack= 10,
+				/obj/random/drinkbottle= 10,
+				/obj/random/tech_supply = 10,
+				/obj/random/maintenance/clean = 10)
 
-/obj/random/closet/maint/medical
+/obj/random/maint/medical
 
 	name = "random maintenance medical trash"
-	icon_state = "landmark_garbage"
 
-/obj/random/closet/maint/medical/spawn_choices()
+/obj/random/maint/medical/spawn_choices()
 	return list(/obj/random/junk = 10,
 				/obj/random/tool = 10)
 
-/obj/random/closet/maint/medicalalt
+/obj/random/maint/medicalalt
 
 	name = "random maintenance medical trash"
-	icon_state = "landmark_garbage"
 
-/obj/random/closet/maint/medicalalt/spawn_choices()
+/obj/random/maint/medicalalt/spawn_choices()
 	return list(/obj/random/junk = 10,
 				/obj/random/tool = 10)
 
-/obj/random/closet/maint/fridge
+/obj/random/maint/fridge
 
 	name = "random maintenance fridge trash"
-	icon_state = "landmark_garbage"
 
-/obj/random/closet/maint/fridge/spawn_choices()
+/obj/random/maint/fridge/spawn_choices()
 	return list(/obj/random/junk = 10,
 				/obj/random/tool = 10)
 
-/obj/random/closet/maint/cargo
+/obj/random/maint/cargo
 
 	name = "random maintenance cargo trash"
-	icon_state = "landmark_garbage"
 
-/obj/random/closet/maint/cargo/spawn_choices()
+/obj/random/maint/cargo/spawn_choices()
 	return list(/obj/random/junk = 10,
 				/obj/random/tool = 10)
 
-/obj/random/closet/maint/security
+/obj/random/maint/security
 
 	name = "random maintenance security trash"
-	icon_state = "landmark_garbage"
 
-/obj/random/closet/maint/security/spawn_choices()
+/obj/random/maint/security/spawn_choices()
 	return list(/obj/random/junk = 10,
 				/obj/random/tool = 10)
 
-/obj/random/closet/maint/science
+/obj/random/maint/science
 
 	name = "random maintenance science trash"
-	icon_state = "landmark_garbage"
 
-/obj/random/closet/maint/science/spawn_choices()
+/obj/random/maint/science/spawn_choices()
 	return list(/obj/random/junk = 10,
 				/obj/random/tool = 10)
 
-/obj/random/closet/maint/hydro
+/obj/random/maint/hydro
 
 	name = "random maintenance hydro trash"
-	icon_state = "landmark_garbage"
 
-/obj/random/closet/maint/hydro/spawn_choices()
+/obj/random/maint/hydro/spawn_choices()
 	return list(/obj/random/junk = 10,
 				/obj/random/tool = 10)
 
-/obj/random/closet/maint/engineering
+/obj/random/maint/engineering
 
 	name = "random maintenance engineering trash"
-	icon_state = "landmark_garbage"
 
-/obj/random/closet/maint/engineering/spawn_choices()
+/obj/random/maint/engineering/spawn_choices()
 	return list(/obj/random/junk = 10,
 				/obj/random/tool = 10)
 
-/obj/random/closet/maint/bio
+/obj/random/maint/bio
 
 	name = "random maintenance bio trash"
-	icon_state = "landmark_garbage"
 
-/obj/random/closet/maint/bio/spawn_choices()
+/obj/random/maint/bio/spawn_choices()
 	return list(/obj/random/junk = 10,
 				/obj/random/tool = 10)
 
-/obj/random/closet/maint/nanotrasen
+/obj/random/maint/nanotrasen
 
 	name = "random maintenance nanotrasen closet trash"
-	icon_state = "landmark_garbage"
 
-/obj/random/closet/maint/nanotrasen/spawn_choices()
+/obj/random/maint/nanotrasen/spawn_choices()
 	return list(/obj/random/junk = 10,
 				/obj/random/tool = 10)
 

@@ -9,7 +9,7 @@
 
 /obj/structure/closet/maintenance/prefilled/WillContain()
 	return list(
-		/obj/random/medical = rand(1,8)
+		/obj/random/maint = rand(1,8)
 	)
 
 // /obj/structure/closet/maintenance/prefilled/New()
@@ -32,6 +32,11 @@
 
 /obj/structure/closet/maintenance/closet/prefilled
 
+/obj/structure/closet/maintenance/closet/prefilled/WillContain()
+	return list(
+		/obj/random/maint/closet = rand(1,8)
+	)
+
 // /obj/structure/closet/maintenance/closet/prefilled/New()
 // 	..()
 
@@ -50,6 +55,21 @@
 	icon_opened = "maintmedicalopen"
 
 /obj/structure/closet/maintenance/medical/prefilled
+
+/obj/structure/closet/maintenance/medical/prefilled/WillContain()
+
+	if(prob(50))
+		icon_state = "maintmedicalalt"
+		icon_closed = "maintmedicalalt"
+		icon_opened = "maintmedicalaltopen"
+
+		return list(
+			/obj/random/maint/medicalalt = rand(1,8)
+		)
+
+	return list(
+		/obj/random/maint/medical = rand(1,8)
+	)
 
 // /obj/structure/closet/maintenance/medical/prefilled/New()
 // 	..()
@@ -106,6 +126,12 @@
 
 /obj/structure/closet/maintenance/fridge/prefilled
 
+/obj/structure/closet/maintenance/fridge/prefilled/WillContain()
+	return list(
+		/obj/random/maint/fridge = rand(1,8)
+	)
+
+
 // /obj/structure/closet/maintenance/fridge/prefilled/New()
 // 	..()
 
@@ -136,6 +162,12 @@
 
 /obj/structure/closet/maintenance/cargo/prefilled
 
+/obj/structure/closet/maintenance/cargo/prefilled/WillContain()
+	return list(
+		/obj/random/maint/cargo = rand(1,8)
+	)
+
+
 // /obj/structure/closet/maintenance/cargo/prefilled/New()
 // 	..()
 
@@ -165,6 +197,12 @@
 	icon_opened = "maintsecopen"
 
 /obj/structure/closet/maintenance/security/prefilled
+
+/obj/structure/closet/maintenance/security/prefilled/WillContain()
+	return list(
+		/obj/random/maint/security = rand(1,8)
+	)
+
 
 // /obj/structure/closet/maintenance/security/prefilled/New()
 // 	..()
@@ -200,6 +238,12 @@
 
 /obj/structure/closet/maintenance/science/prefilled
 
+/obj/structure/closet/maintenance/science/prefilled/WillContain()
+	return list(
+		/obj/random/maint/science = rand(1,8)
+	)
+
+
 // /obj/structure/closet/maintenance/science/prefilled/New()
 // 	..()
 
@@ -232,6 +276,11 @@
 	icon_opened = "mainthydroopen"
 
 /obj/structure/closet/maintenance/hydro/prefilled
+
+/obj/structure/closet/maintenance/hydro/prefilled/WillContain()
+	return list(
+		/obj/random/maint/hydro = rand(1,8)
+	)
 
 // /obj/structure/closet/maintenance/hydro/prefilled/New()
 // 	..()
@@ -266,6 +315,11 @@
 
 /obj/structure/closet/maintenance/engineering/prefilled
 
+/obj/structure/closet/maintenance/engineering/prefilled/WillContain()
+	return list(
+		/obj/random/maint/engineering = rand(1,8)
+	)
+
 // /obj/structure/closet/maintenance/engineering/prefilled/New()
 // 	..()
 
@@ -295,6 +349,11 @@
 	icon_opened = "maintbioopen"
 
 /obj/structure/closet/maintenance/bio/prefilled
+
+/obj/structure/closet/maintenance/bio/prefilled/WillContain()
+	return list(
+		/obj/random/maint/bio = rand(1,8)
+	)
 
 // /obj/structure/closet/maintenance/bio/prefilled/New()
 // 	..()
@@ -326,6 +385,11 @@
 	icon_opened = "maintntopen"
 
 /obj/structure/closet/maintenance/nanotrasen/prefilled
+
+/obj/structure/closet/maintenance/nanotrasen/prefilled/WillContain()
+	return list(
+		/obj/random/maint/nanotrasen = rand(1,8)
+	)
 
 // /obj/structure/closet/maintenance/nanotrasen/prefilled/New()
 // 	..()
