@@ -534,11 +534,11 @@
 
 /obj/random/maint/closet/spawn_choices()
 	return list(/obj/random/junk = 10,
-				/obj/random/cash = 10,
-				/obj/random/snack= 10,
-				/obj/random/drinkbottle= 10,
-				/obj/random/tech_supply = 10,
-				/obj/random/maintenance/clean = 10)
+				/obj/random/snack= 7,
+				/obj/random/drinkbottle = 7,
+				/obj/random/cash = 5,
+				/obj/random/tech_supply = 3,
+				/obj/random/maintenance/clean = 3)
 
 /obj/random/maint/medical
 
