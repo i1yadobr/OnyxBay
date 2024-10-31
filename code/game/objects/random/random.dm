@@ -521,7 +521,7 @@
 				/obj/structure/closet/maintenance/nanotrasen/prefilled = 1)
 
 /obj/random/closet/maint
-	name = "random maintenance trash"
+	name = "random maintenance closet trash"
 	icon_state = "landmark_maint"
 	spawn_nothing_percentage = null
 
@@ -532,11 +532,11 @@
 				/obj/random/music_tape = 1)
 
 /obj/random/closet/maint/closet
-	name = "random maintenance closet trash"
+	name = "random maintenance better closet trash"
 
 /obj/random/closet/maint/closet/spawn_choices()
 	return list(/obj/random/junk = 10,
-				/obj/random/snack= 7,
+				/obj/random/snack = 7,
 				/obj/random/drinkbottle = 7,
 				/obj/random/cash = 5,
 				/obj/random/tech_supply = 3,
@@ -631,14 +631,14 @@
 /obj/random/closet/maint/science/spawn_choices()
 	return list(/obj/random/junk = 30,
 				/obj/random/computer_hardware = 25,
-				/obj/item/stack/material/glass/ten = 20,
-				/obj/item/stack/material/steel/ten = 20,
-				/obj/item/clothing/glasses/hud/standard/science = 15,
+				/obj/item/stack/material/glass/ten = 15,
+				/obj/item/stack/material/steel/ten = 15,
 				/obj/item/rcd_upgrade/anti_interrupt = 10,
 				/obj/item/rcd_upgrade/cooling = 10,
 				/obj/item/rcd_upgrade/frames = 10,
 				/obj/item/rcd_upgrade/furnishing = 10,
 				/obj/item/rcd_upgrade/simple_circuits = 10,
+				/obj/item/clothing/glasses/hud/standard/science = 5,
 				/obj/item/cell/infinite = 1)
 
 /obj/random/closet/maint/hydro
