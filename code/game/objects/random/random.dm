@@ -537,10 +537,10 @@
 
 /obj/random/closet/maint/closet/spawn_choices()
 	return list(/obj/random/junk = 10,
-				/obj/random/snack = 7,
+				/obj/random/tech_supply= 7,
 				/obj/random/drinkbottle = 7,
 				/obj/random/cash = 5,
-				/obj/random/tech_supply = 3,
+				/obj/random/snack = 3,
 				/obj/random/maintenance/clean = 3)
 
 /obj/random/closet/maint/medical
@@ -672,11 +672,11 @@
 
 /obj/random/closet/maint/engineering/spawn_choices()
 	return list(/obj/random/junk = 10,
-				/obj/item/clothing/gloves/insulated/cheap = 8,
-				/obj/random/tool = 7,
+				/obj/random/tool = 8,
 				/obj/item/clothing/accessory/armband/engine = 7,
 				/obj/item/clothing/mask/gas = 7,
 				/obj/item/device/flashlight/upgraded = 6,
+				/obj/item/clothing/gloves/insulated/cheap = 6,
 				/obj/item/clothing/accessory/storage/brown_vest = 5,
 				/obj/item/clothing/accessory/storage/brown_vest/alt = 5,
 				/obj/random/toolbox = 3,
@@ -707,12 +707,13 @@
 
 /obj/random/closet/maint/nanotrasen/spawn_choices()
 	return list(/obj/random/junk = 10,
-				/obj/item/clothing/head/soft/sec/corp/guard = 8,
-				/obj/item/clothing/accessory/armband/whitered = 8,
-				/obj/item/storage/backpack/nanotrasen = 8,
-				/obj/item/clothing/under/track_pants/trackpantswhite = 8,
-				/obj/item/clothing/gloves/white = 8,
-				/obj/item/clothing/shoes/white = 8,
+				/obj/random/cash = 8,
+				/obj/item/clothing/head/soft/sec/corp/guard = 7,
+				/obj/item/clothing/accessory/armband/whitered = 7,
+				/obj/item/clothing/under/track_pants/trackpantswhite = 7,
+				/obj/item/clothing/gloves/white = 7,
+				/obj/item/clothing/shoes/white = 7,
+				/obj/item/storage/backpack/nanotrasen = 6,
 				/obj/item/storage/briefcase = 6,
 				/obj/item/device/radio/headset = 6,
 				/obj/item/book/wiki/chain_of_command = 4,
