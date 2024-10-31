@@ -9,7 +9,7 @@
 
 /obj/structure/closet/maintenance/prefilled/WillContain()
 	return list(
-		/obj/random/maint = rand(1,8)
+		/obj/random/closet/maint = rand(1,8)
 	)
 
 /obj/structure/closet/maintenance/closet
@@ -21,7 +21,7 @@
 
 /obj/structure/closet/maintenance/closet/prefilled/WillContain()
 	return list(
-		/obj/random/maint/closet = rand(1,8)
+		/obj/random/closet/maint/closet = rand(1,8)
 	)
 
 /obj/structure/closet/maintenance/medical
@@ -33,7 +33,7 @@
 
 /obj/structure/closet/maintenance/medical/prefilled/WillContain()
 	return list(
-		/obj/random/maint/medical = rand(1,8)
+		/obj/random/closet/maint/medical = rand(1,8)
 	)
 
 /obj/structure/closet/maintenance/medicalalt
@@ -45,7 +45,7 @@
 
 /obj/structure/closet/maintenance/medicalalt/prefilled/WillContain()
 	return list(
-		/obj/random/maint/medicalalt = rand(1,8)
+		/obj/random/closet/maint/medicalalt = rand(1,8)
 	)
 
 /obj/structure/closet/maintenance/fridge
@@ -59,7 +59,7 @@
 
 /obj/structure/closet/maintenance/fridge/prefilled/WillContain()
 	return list(
-		/obj/random/maint/fridge = rand(1,8)
+		/obj/random/closet/maint/fridge = rand(1,8)
 	)
 
 /obj/structure/closet/maintenance/cargo
@@ -71,7 +71,7 @@
 
 /obj/structure/closet/maintenance/cargo/prefilled/WillContain()
 	return list(
-		/obj/random/maint/cargo = rand(1,8)
+		/obj/random/closet/maint/cargo = rand(1,8)
 	)
 
 /obj/structure/closet/maintenance/security
@@ -83,7 +83,7 @@
 
 /obj/structure/closet/maintenance/security/prefilled/WillContain()
 	return list(
-		/obj/random/maint/security = rand(1,8)
+		/obj/random/closet/maint/security = rand(1,8)
 	)
 
 /obj/structure/closet/maintenance/science
@@ -95,7 +95,7 @@
 
 /obj/structure/closet/maintenance/science/prefilled/WillContain()
 	return list(
-		/obj/random/maint/science = rand(1,8)
+		/obj/random/closet/maint/science = rand(1,8)
 	)
 
 /obj/structure/closet/maintenance/hydro
@@ -107,7 +107,7 @@
 
 /obj/structure/closet/maintenance/hydro/prefilled/WillContain()
 	return list(
-		/obj/random/maint/hydro = rand(1,8)
+		/obj/random/closet/maint/hydro = rand(1,8)
 	)
 
 /obj/structure/closet/maintenance/engineering
@@ -119,7 +119,7 @@
 
 /obj/structure/closet/maintenance/engineering/prefilled/WillContain()
 	return list(
-		/obj/random/maint/engineering = rand(1,8)
+		/obj/random/closet/maint/engineering = rand(1,8)
 	)
 
 /obj/structure/closet/maintenance/bio
@@ -131,7 +131,7 @@
 
 /obj/structure/closet/maintenance/bio/prefilled/WillContain()
 	return list(
-		/obj/random/maint/bio = rand(1,8)
+		/obj/random/closet/maint/bio = rand(1,8)
 	)
 
 /obj/structure/closet/maintenance/nanotrasen
@@ -144,5 +144,5 @@
 
 /obj/structure/closet/maintenance/nanotrasen/prefilled/WillContain()
 	return list(
-		/obj/random/maint/nanotrasen = rand(1,8)
+		/obj/random/closet/maint/nanotrasen = rand(1,8)
 	)

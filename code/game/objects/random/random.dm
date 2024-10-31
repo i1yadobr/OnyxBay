@@ -519,20 +519,21 @@
 				/obj/structure/closet/maintenance/bio/prefilled = 2,
 				/obj/structure/closet/maintenance/nanotrasen/prefilled = 1)
 
-/obj/random/maint
+/obj/random/closet/maint
 	name = "random maintenance trash"
 	icon_state = "landmark_maint"
+	spawn_nothing_percentage = 0
 
-/obj/random/maint/spawn_choices()
+/obj/random/closet/maint/spawn_choices()
 	return list(/obj/random/junk = 10,
 				/obj/random/cash = 5,
 				/obj/random/maintenance/clean = 5,
 				/obj/random/music_tape = 1)
 
-/obj/random/maint/closet
+/obj/random/closet/maint/closet
 	name = "random maintenance closet trash"
 
-/obj/random/maint/closet/spawn_choices()
+/obj/random/closet/maint/closet/spawn_choices()
 	return list(/obj/random/junk = 10,
 				/obj/random/snack= 7,
 				/obj/random/drinkbottle = 7,
@@ -540,10 +541,10 @@
 				/obj/random/tech_supply = 3,
 				/obj/random/maintenance/clean = 3)
 
-/obj/random/maint/medical
+/obj/random/closet/maint/medical
 	name = "random maintenance medical trash"
 
-/obj/random/maint/medical/spawn_choices()
+/obj/random/closet/maint/medical/spawn_choices()
 	return list(/obj/random/junk = 10,
 				/obj/item/clothing/mask/surgical = 7,
 				/obj/item/clothing/suit/surgicalapron = 7,
@@ -558,10 +559,10 @@
 				/obj/random/firstaid = 3,
 				/obj/item/scalpel = 1)
 
-/obj/random/maint/medicalalt
-	name = "random maintenance medical trash"
+/obj/random/closet/maint/medicalalt
+	name = "random maintenance medical lite trash"
 
-/obj/random/maint/medicalalt/spawn_choices()
+/obj/random/closet/maint/medicalalt/spawn_choices()
 	return list(/obj/random/junk = 10,
 				/obj/random/medical/lite = 7,
 				/obj/random/pill = 5,
@@ -570,10 +571,10 @@
 				/obj/item/reagent_containers/hypospray/autoinjector/dermaline = 1,
 				/obj/item/reagent_containers/hypospray/autoinjector/bicaridine = 1)
 
-/obj/random/maint/fridge
+/obj/random/closet/maint/fridge
 	name = "random maintenance fridge trash"
 
-/obj/random/maint/fridge/spawn_choices()
+/obj/random/closet/maint/fridge/spawn_choices()
 	return list(/obj/random/junk = 10,
 				/obj/random/snack = 7,
 				/obj/random/drinkbottle = 5,
@@ -587,10 +588,10 @@
 				/obj/item/material/knife/butch/kitchen = 1,
 				/obj/item/reagent_containers/food/meat/human = 1)
 
-/obj/random/maint/cargo
+/obj/random/closet/maint/cargo
 	name = "random maintenance cargo trash"
 
-/obj/random/maint/cargo/spawn_choices()
+/obj/random/closet/maint/cargo/spawn_choices()
 	return list(/obj/random/junk = 10,
 				/obj/item/storage/box = 7,
 				/obj/random/smokes = 5,
@@ -603,30 +604,30 @@
 				/obj/item/hand_labeler = 3,
 				/obj/item/material/twohanded/baseballbat/metal = 1)
 
-/obj/random/maint/security
+/obj/random/closet/maint/security
 	name = "random maintenance security trash"
 
-/obj/random/maint/security/spawn_choices()
+/obj/random/closet/maint/security/spawn_choices()
 	return list(/obj/random/junk = 50,
-				/obj/item/storage/secure/briefcase = 35,
-				/obj/item/device/taperecorder = 30,
-				/obj/item/cell/device/high = 30,
 				/obj/random/cash = 25,
+				/obj/item/storage/secure/briefcase = 25,
 				/obj/item/storage/box/security = 20,
 				/obj/item/device/flashlight/maglight = 15,
+				/obj/item/cell/device/high = 15,
 				/obj/item/clothing/accessory/armband = 15,
-				/obj/item/grenade/smokebomb = 10,
 				/obj/item/clothing/accessory/storage/black_vest = 10,
 				/obj/item/clothing/accessory/storage/black_vest/alt = 10,
-				/obj/item/clothing/head/helmet = 3,
-				/obj/item/clothing/suit/armor/vest = 3,
-				/obj/item/melee/baton = 2,
+				/obj/item/device/taperecorder = 10,
+				/obj/item/grenade/smokebomb = 5,
+				/obj/item/clothing/head/helmet = 2,
+				/obj/item/clothing/suit/armor/vest = 2,
+				/obj/item/melee/baton = 1,
 				/obj/item/storage/secure/briefcase/money = 1)
 
-/obj/random/maint/science
+/obj/random/closet/maint/science
 	name = "random maintenance science trash"
 
-/obj/random/maint/science/spawn_choices()
+/obj/random/closet/maint/science/spawn_choices()
 	return list(/obj/random/junk = 30,
 				/obj/random/computer_hardware = 25,
 				/obj/item/stack/material/glass/ten = 20,
@@ -639,10 +640,10 @@
 				/obj/item/rcd_upgrade/simple_circuits = 10,
 				/obj/item/cell/infinite = 1)
 
-/obj/random/maint/hydro
+/obj/random/closet/maint/hydro
 	name = "random maintenance hydro trash"
 
-/obj/random/maint/hydro/spawn_choices()
+/obj/random/closet/maint/hydro/spawn_choices()
 	return list(/obj/random/junk = 10,
 				/obj/item/storage/plants = 6,
 				/obj/item/clothing/accessory/armband/hydro = 5,
@@ -656,10 +657,10 @@
 				/obj/structure/flora/pottedplant/dead = 1,
 				/obj/item/seeds/random = 1)
 
-/obj/random/maint/engineering
+/obj/random/closet/maint/engineering
 	name = "random maintenance engineering trash"
 
-/obj/random/maint/engineering/spawn_choices()
+/obj/random/closet/maint/engineering/spawn_choices()
 	return list(/obj/random/junk = 10,
 				/obj/item/clothing/gloves/insulated/cheap = 8,
 				/obj/random/tool = 7,
@@ -672,10 +673,10 @@
 				/obj/item/device/multitool = 3,
 				/obj/item/clothing/gloves/insulated = 1)
 
-/obj/random/maint/bio
+/obj/random/closet/maint/bio
 	name = "random maintenance bio trash"
 
-/obj/random/maint/bio/spawn_choices()
+/obj/random/closet/maint/bio/spawn_choices()
 	return list(/obj/random/junk = 10,
 				/obj/item/reagent_containers/vessel/beaker/vial = 7,
 				/obj/item/clothing/head/bio_hood/general = 5,
@@ -689,10 +690,10 @@
 				/obj/item/reagent_containers/vessel/bottle/chemical/spaceacillin = 2,
 				/obj/item/virusdish/random = 1)
 
-/obj/random/maint/nanotrasen
+/obj/random/closet/maint/nanotrasen
 	name = "random maintenance nanotrasen closet trash"
 
-/obj/random/maint/nanotrasen/spawn_choices()
+/obj/random/closet/maint/nanotrasen/spawn_choices()
 	return list(/obj/random/junk = 10,
 				/obj/item/clothing/head/soft/sec/corp/guard = 8,
 				/obj/item/clothing/accessory/armband/whitered = 8,
