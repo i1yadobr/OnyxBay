@@ -522,7 +522,7 @@
 /obj/random/closet/maint
 	name = "random maintenance trash"
 	icon_state = "landmark_maint"
-	spawn_nothing_percentage = 0
+	spawn_nothing_percentage = null
 
 /obj/random/closet/maint/spawn_choices()
 	return list(/obj/random/junk = 10,
