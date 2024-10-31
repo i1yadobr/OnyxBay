@@ -520,7 +520,6 @@
 				/obj/structure/closet/maintenance/nanotrasen/prefilled = 1)
 
 /obj/random/maint
-
 	name = "random maintenance trash"
 	icon_state = "landmark_maint"
 
@@ -531,7 +530,6 @@
 				/obj/random/music_tape = 1)
 
 /obj/random/maint/closet
-
 	name = "random maintenance closet trash"
 
 /obj/random/maint/closet/spawn_choices()
@@ -543,7 +541,6 @@
 				/obj/random/maintenance/clean = 3)
 
 /obj/random/maint/medical
-
 	name = "random maintenance medical trash"
 
 /obj/random/maint/medical/spawn_choices()
@@ -562,7 +559,6 @@
 				/obj/item/scalpel = 1)
 
 /obj/random/maint/medicalalt
-
 	name = "random maintenance medical trash"
 
 /obj/random/maint/medicalalt/spawn_choices()
@@ -575,7 +571,6 @@
 				/obj/item/reagent_containers/hypospray/autoinjector/bicaridine = 1)
 
 /obj/random/maint/fridge
-
 	name = "random maintenance fridge trash"
 
 /obj/random/maint/fridge/spawn_choices()
@@ -593,7 +588,6 @@
 				/obj/item/reagent_containers/food/meat/human = 1)
 
 /obj/random/maint/cargo
-
 	name = "random maintenance cargo trash"
 
 /obj/random/maint/cargo/spawn_choices()
@@ -610,7 +604,6 @@
 				/obj/item/material/twohanded/baseballbat/metal = 1)
 
 /obj/random/maint/security
-
 	name = "random maintenance security trash"
 
 /obj/random/maint/security/spawn_choices()
@@ -631,7 +624,6 @@
 				/obj/item/storage/secure/briefcase/money = 1)
 
 /obj/random/maint/science
-
 	name = "random maintenance science trash"
 
 /obj/random/maint/science/spawn_choices()
@@ -648,7 +640,6 @@
 				/obj/item/cell/infinite = 1)
 
 /obj/random/maint/hydro
-
 	name = "random maintenance hydro trash"
 
 /obj/random/maint/hydro/spawn_choices()
@@ -666,7 +657,6 @@
 				/obj/item/seeds/random = 1)
 
 /obj/random/maint/engineering
-
 	name = "random maintenance engineering trash"
 
 /obj/random/maint/engineering/spawn_choices()
@@ -683,7 +673,6 @@
 				/obj/item/clothing/gloves/insulated = 1)
 
 /obj/random/maint/bio
-
 	name = "random maintenance bio trash"
 
 /obj/random/maint/bio/spawn_choices()
@@ -701,7 +690,6 @@
 				/obj/item/virusdish/random = 1)
 
 /obj/random/maint/nanotrasen
-
 	name = "random maintenance nanotrasen closet trash"
 
 /obj/random/maint/nanotrasen/spawn_choices()
