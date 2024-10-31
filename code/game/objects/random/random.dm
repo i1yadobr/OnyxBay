@@ -580,8 +580,8 @@
 	icon_state = "landmark_maint_fridge"
 
 /obj/random/closet/maint/fridge/spawn_choices()
-	return list(/obj/random/junk = 10,
-				/obj/random/snack = 7,
+	return list(/obj/random/snack = 10,
+				/obj/random/junk = 7,
 				/obj/random/drinkbottle = 5,
 				/obj/item/reagent_containers/food/meat/monkey = 5,
 				/obj/item/reagent_containers/food/sausage = 5,
