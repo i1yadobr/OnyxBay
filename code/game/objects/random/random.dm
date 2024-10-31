@@ -560,7 +560,13 @@
 				/obj/item/clothing/accessory/storage/white_vest/alt = 3,
 				/obj/item/clothing/accessory/storage/white_vest = 3,
 				/obj/random/firstaid = 3,
-				/obj/item/scalpel = 1)
+				/obj/item/scalpel = 1,
+				/obj/item/circular_saw = 1,
+				/obj/item/bonesetter = 1,
+				/obj/item/bonegel = 1,
+				/obj/item/FixOVein = 1,
+				/obj/item/cautery = 1,
+				/obj/item/hemostat = 1)
 
 /obj/random/closet/maint/medicalalt
 	name = "random maintenance medical lite trash"
@@ -581,8 +587,8 @@
 
 /obj/random/closet/maint/fridge/spawn_choices()
 	return list(/obj/random/snack = 10,
-				/obj/random/junk = 7,
-				/obj/random/drinkbottle = 5,
+				/obj/random/drinkbottle = 7,
+				/obj/random/junk = 5,
 				/obj/item/reagent_containers/food/meat/monkey = 5,
 				/obj/item/reagent_containers/food/sausage = 5,
 				/obj/item/reagent_containers/food/fries = 5,
@@ -600,14 +606,17 @@
 /obj/random/closet/maint/cargo/spawn_choices()
 	return list(/obj/random/junk = 10,
 				/obj/item/storage/box = 7,
+				/obj/random/cash = 5,
 				/obj/random/smokes = 5,
 				/obj/item/clothing/accessory/armband/cargo = 5,
 				/obj/item/clothing/gloves/thick = 5,
 				/obj/item/storage/backpack/dufflebag = 5,
-				/obj/random/cash = 3,
+				/obj/item/stamp = 3,
 				/obj/item/tape_roll = 3,
 				/obj/item/packageWrap = 3,
 				/obj/item/hand_labeler = 3,
+				/obj/item/circuitboard/arcade/orion_trail = 2,
+				/obj/item/circuitboard/arcade/battle = 2,
 				/obj/item/material/twohanded/baseballbat/metal = 1)
 
 /obj/random/closet/maint/security
@@ -619,6 +628,7 @@
 				/obj/random/cash = 25,
 				/obj/item/storage/secure/briefcase = 25,
 				/obj/item/storage/box/security = 20,
+				/obj/item/device/flashlight/flare = 20,
 				/obj/item/device/flashlight/maglight = 15,
 				/obj/item/cell/device/high = 15,
 				/obj/item/clothing/accessory/armband = 15,
@@ -626,6 +636,7 @@
 				/obj/item/clothing/accessory/storage/black_vest/alt = 10,
 				/obj/item/device/taperecorder = 10,
 				/obj/item/grenade/smokebomb = 5,
+				/obj/item/clothing/glasses/sunglasses = 5,
 				/obj/item/clothing/head/helmet = 2,
 				/obj/item/clothing/suit/armor/vest = 2,
 				/obj/item/melee/baton = 1,
@@ -638,13 +649,13 @@
 /obj/random/closet/maint/science/spawn_choices()
 	return list(/obj/random/junk = 30,
 				/obj/random/computer_hardware = 25,
-				/obj/item/stack/material/glass/ten = 15,
-				/obj/item/stack/material/steel/ten = 15,
-				/obj/item/rcd_upgrade/anti_interrupt = 10,
-				/obj/item/rcd_upgrade/cooling = 10,
-				/obj/item/rcd_upgrade/frames = 10,
-				/obj/item/rcd_upgrade/furnishing = 10,
-				/obj/item/rcd_upgrade/simple_circuits = 10,
+				/obj/item/stack/material/glass/ten = 10,
+				/obj/item/stack/material/steel/ten = 10,
+				/obj/item/rcd_upgrade/anti_interrupt = 7,
+				/obj/item/rcd_upgrade/cooling = 7,
+				/obj/item/rcd_upgrade/frames = 7,
+				/obj/item/rcd_upgrade/furnishing = 7,
+				/obj/item/rcd_upgrade/simple_circuits = 7,
 				/obj/item/clothing/glasses/hud/standard/science = 5,
 				/obj/item/cell/infinite = 1)
 
@@ -681,7 +692,8 @@
 				/obj/item/clothing/accessory/storage/brown_vest/alt = 5,
 				/obj/random/toolbox = 3,
 				/obj/item/device/multitool = 3,
-				/obj/item/clothing/gloves/insulated = 1)
+				/obj/item/clothing/gloves/insulated = 1,
+				/obj/item/clothing/shoes/magboots = 1)
 
 /obj/random/closet/maint/bio
 	name = "random maintenance bio trash"
@@ -694,6 +706,7 @@
 				/obj/item/clothing/suit/bio_suit/general = 5,
 				/obj/item/clothing/mask/gas/clear = 4,
 				/obj/item/tank/emergency/oxygen/double = 4,
+				/obj/item/tank/emergency/oxygen/engi = 4,
 				/obj/item/storage/box/masks = 3,
 				/obj/item/storage/box/gloves = 3,
 				/obj/item/storage/box/syringes = 3,
