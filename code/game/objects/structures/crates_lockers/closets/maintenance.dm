@@ -59,7 +59,7 @@
 
 /obj/structure/closet/maintenance/fridge/prefilled/WillContain()
 	return list(
-		/obj/random/closet/maint/fridge = rand(1,8)
+		/obj/random/closet/maint/fridge = rand(4,8)
 	)
 
 /obj/structure/closet/maintenance/cargo
