@@ -141,22 +141,22 @@
 	spawn_nothing_percentage = 33
 
 /obj/random/computer_hardware/spawn_choices()
-	return list(/obj/item/computer_hardware/ai_slot = 3,
-				/obj/item/computer_hardware/battery_module = 2,
-				/obj/item/computer_hardware/battery_module/advanced = 2,
+	return list(/obj/item/computer_hardware/ai_slot = 1,
+				/obj/item/computer_hardware/battery_module = 3,
+				/obj/item/computer_hardware/battery_module/advanced = 1,
 				/obj/item/computer_hardware/battery_module/micro = 2,
-				/obj/item/computer_hardware/battery_module/nano = 2,
-				/obj/item/computer_hardware/card_slot = 2,
+				/obj/item/computer_hardware/battery_module/nano = 4,
+				/obj/item/computer_hardware/card_slot = 1,
 				/obj/item/computer_hardware/hard_drive = 2,
-				/obj/item/computer_hardware/hard_drive/advanced = 2,
+				/obj/item/computer_hardware/hard_drive/advanced = 1,
 				/obj/item/computer_hardware/hard_drive/micro = 2,
-				/obj/item/computer_hardware/hard_drive/small = 2,
-				/obj/item/computer_hardware/hard_drive/portable = 2,
-				/obj/item/computer_hardware/nano_printer = 2,
-				/obj/item/computer_hardware/network_card = 2,
+				/obj/item/computer_hardware/hard_drive/small = 3,
+				/obj/item/computer_hardware/hard_drive/portable = 4,
+				/obj/item/computer_hardware/nano_printer = 1,
+				/obj/item/computer_hardware/network_card = 1,
 				/obj/item/computer_hardware/processor_unit = 2,
-				/obj/item/computer_hardware/processor_unit/small = 2,
-				/obj/item/computer_hardware/tesla_link = 2,
+				/obj/item/computer_hardware/processor_unit/small = 3,
+				/obj/item/computer_hardware/tesla_link = 1,
 				/obj/item/modular_computer/tablet = 2,
 				/obj/item/modular_computer/laptop = 2)
 
@@ -238,6 +238,8 @@
 				/obj/item/reagent_containers/pill/spaceacillin = 3,
 				/obj/item/reagent_containers/pill/tricordrazine = 4,
 				/obj/item/reagent_containers/pill/citalopram = 4,
+				/obj/item/reagent_containers/pill/methylphenidate = 3,
+				/obj/item/reagent_containers/pill/paroxetine = 2,
 				/obj/item/reagent_containers/pill/antidexafen = 4,
 				/obj/item/reagent_containers/pill/oxycodone = 1,
 				/obj/item/reagent_containers/pill/tramadol = 2,
@@ -546,7 +548,18 @@
 
 /obj/random/maint/medical/spawn_choices()
 	return list(/obj/random/junk = 10,
-				/obj/random/tool = 10)
+				/obj/item/clothing/mask/surgical = 7,
+				/obj/item/clothing/suit/surgicalapron = 7,
+				/obj/item/clothing/under/rank/medical/scrubs/blue = 7,
+				/obj/item/clothing/gloves/latex/nitrile = 7,
+				/obj/item/clothing/accessory/armband/med = 7,
+				/obj/random/pill = 5,
+				/obj/item/storage/box/syringes = 5,
+				/obj/item/storage/box/autoinjectors = 5,
+				/obj/item/clothing/accessory/storage/white_vest/alt = 3,
+				/obj/item/clothing/accessory/storage/white_vest = 3,
+				/obj/random/firstaid = 3,
+				/obj/item/scalpel = 1)
 
 /obj/random/maint/medicalalt
 
@@ -554,7 +567,12 @@
 
 /obj/random/maint/medicalalt/spawn_choices()
 	return list(/obj/random/junk = 10,
-				/obj/random/tool = 10)
+				/obj/random/medical/lite = 7,
+				/obj/random/pill = 5,
+				/obj/item/reagent_containers/hypospray/autoinjector/pain = 1,
+				/obj/item/reagent_containers/hypospray/autoinjector/dexalinp = 1,
+				/obj/item/reagent_containers/hypospray/autoinjector/dermaline = 1,
+				/obj/item/reagent_containers/hypospray/autoinjector/bicaridine = 1)
 
 /obj/random/maint/fridge
 
@@ -562,7 +580,17 @@
 
 /obj/random/maint/fridge/spawn_choices()
 	return list(/obj/random/junk = 10,
-				/obj/random/tool = 10)
+				/obj/random/snack = 7,
+				/obj/random/drinkbottle = 5,
+				/obj/item/reagent_containers/food/meat/monkey = 5,
+				/obj/item/reagent_containers/food/sausage = 5,
+				/obj/item/reagent_containers/food/fries = 5,
+				/obj/item/reagent_containers/food/friedegg = 5,
+				/obj/item/reagent_containers/food/cheeseburrito = 5,
+				/obj/item/reagent_containers/food/packaged/hematogen = 5,
+				/obj/item/reagent_containers/food/sliceable/meatbread = 3,
+				/obj/item/material/knife/butch/kitchen = 1,
+				/obj/item/reagent_containers/food/meat/human = 1)
 
 /obj/random/maint/cargo
 
@@ -570,23 +598,54 @@
 
 /obj/random/maint/cargo/spawn_choices()
 	return list(/obj/random/junk = 10,
-				/obj/random/tool = 10)
+				/obj/item/storage/box = 7,
+				/obj/random/smokes = 5,
+				/obj/item/clothing/accessory/armband/cargo = 5,
+				/obj/item/clothing/gloves/thick = 5,
+				/obj/item/storage/backpack/dufflebag = 5,
+				/obj/random/cash = 3,
+				/obj/item/tape_roll = 3,
+				/obj/item/packageWrap = 3,
+				/obj/item/hand_labeler = 3,
+				/obj/item/material/twohanded/baseballbat/metal = 1)
 
 /obj/random/maint/security
 
 	name = "random maintenance security trash"
 
 /obj/random/maint/security/spawn_choices()
-	return list(/obj/random/junk = 10,
-				/obj/random/tool = 10)
+	return list(/obj/random/junk = 50,
+				/obj/item/storage/secure/briefcase = 35,
+				/obj/item/device/taperecorder = 30,
+				/obj/item/cell/device/high = 30,
+				/obj/random/cash = 25,
+				/obj/item/storage/box/security = 20,
+				/obj/item/device/flashlight/maglight = 15,
+				/obj/item/clothing/accessory/armband = 15,
+				/obj/item/grenade/smokebomb = 10,
+				/obj/item/clothing/accessory/storage/black_vest = 10,
+				/obj/item/clothing/accessory/storage/black_vest/alt = 10,
+				/obj/item/clothing/head/helmet = 3,
+				/obj/item/clothing/suit/armor/vest = 3,
+				/obj/item/melee/baton = 2,
+				/obj/item/storage/secure/briefcase/money = 1)
 
 /obj/random/maint/science
 
 	name = "random maintenance science trash"
 
 /obj/random/maint/science/spawn_choices()
-	return list(/obj/random/junk = 10,
-				/obj/random/tool = 10)
+	return list(/obj/random/junk = 30,
+				/obj/random/computer_hardware = 25,
+				/obj/item/stack/material/glass/ten = 20,
+				/obj/item/stack/material/steel/ten = 20,
+				/obj/item/clothing/glasses/hud/standard/science = 15,
+				/obj/item/rcd_upgrade/anti_interrupt = 10,
+				/obj/item/rcd_upgrade/cooling = 10,
+				/obj/item/rcd_upgrade/frames = 10,
+				/obj/item/rcd_upgrade/furnishing = 10,
+				/obj/item/rcd_upgrade/simple_circuits = 10,
+				/obj/item/cell/infinite = 1)
 
 /obj/random/maint/hydro
 
@@ -594,7 +653,17 @@
 
 /obj/random/maint/hydro/spawn_choices()
 	return list(/obj/random/junk = 10,
-				/obj/random/tool = 10)
+				/obj/item/storage/plants = 6,
+				/obj/item/clothing/accessory/armband/hydro = 5,
+				/obj/item/clothing/gloves/thick/botany = 5,
+				/obj/item/device/analyzer/plant_analyzer = 5,
+				/obj/item/material/hatchet = 4,
+				/obj/item/material/minihoe = 4,
+				/obj/item/reagent_containers/vessel/plastic/eznutrient = 3,
+				/obj/item/reagent_containers/vessel/plastic/robustharvest = 3,
+				/obj/item/reagent_containers/vessel/plastic/left4zed = 3,
+				/obj/structure/flora/pottedplant/dead = 1,
+				/obj/item/seeds/random = 1)
 
 /obj/random/maint/engineering
 
@@ -602,7 +671,16 @@
 
 /obj/random/maint/engineering/spawn_choices()
 	return list(/obj/random/junk = 10,
-				/obj/random/tool = 10)
+				/obj/item/clothing/gloves/insulated/cheap = 8,
+				/obj/random/tool = 7,
+				/obj/item/clothing/accessory/armband/engine = 7,
+				/obj/item/clothing/mask/gas = 7,
+				/obj/item/device/flashlight/upgraded = 6,
+				/obj/item/clothing/accessory/storage/brown_vest = 5,
+				/obj/item/clothing/accessory/storage/brown_vest/alt = 5,
+				/obj/random/toolbox = 3,
+				/obj/item/device/multitool = 3,
+				/obj/item/clothing/gloves/insulated = 1)
 
 /obj/random/maint/bio
 
@@ -610,7 +688,17 @@
 
 /obj/random/maint/bio/spawn_choices()
 	return list(/obj/random/junk = 10,
-				/obj/random/tool = 10)
+				/obj/item/reagent_containers/vessel/beaker/vial = 7,
+				/obj/item/clothing/head/bio_hood/general = 5,
+				/obj/item/clothing/suit/bio_suit/general = 5,
+				/obj/item/clothing/mask/gas/clear = 4,
+				/obj/item/tank/emergency/oxygen/double = 4,
+				/obj/item/storage/box/masks = 3,
+				/obj/item/storage/box/gloves = 3,
+				/obj/item/storage/box/syringes = 3,
+				/obj/item/clothing/glasses/hud/standard/medical = 2,
+				/obj/item/reagent_containers/vessel/bottle/chemical/spaceacillin = 2,
+				/obj/item/virusdish/random = 1)
 
 /obj/random/maint/nanotrasen
 
@@ -618,7 +706,18 @@
 
 /obj/random/maint/nanotrasen/spawn_choices()
 	return list(/obj/random/junk = 10,
-				/obj/random/tool = 10)
+				/obj/item/clothing/head/soft/sec/corp/guard = 8,
+				/obj/item/clothing/accessory/armband/whitered = 8,
+				/obj/item/storage/backpack/nanotrasen = 8,
+				/obj/item/clothing/under/track_pants/trackpantswhite = 8,
+				/obj/item/clothing/gloves/white = 8,
+				/obj/item/clothing/shoes/white = 8,
+				/obj/item/storage/briefcase = 6,
+				/obj/item/device/radio/headset = 6,
+				/obj/item/book/wiki/chain_of_command = 4,
+				/obj/item/book/wiki/nt_regs = 4,
+				/obj/item/clothing/accessory/holster/thigh = 2,
+				/obj/item/clothing/suit/armor/pcarrier/light/cheap = 1)
 
 /obj/random/coin
 	name = "random coin"

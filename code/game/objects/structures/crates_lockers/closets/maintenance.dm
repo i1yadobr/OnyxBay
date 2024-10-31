@@ -57,18 +57,20 @@
 /obj/structure/closet/maintenance/medical/prefilled
 
 /obj/structure/closet/maintenance/medical/prefilled/WillContain()
-
-	if(prob(50))
-		icon_state = "maintmedicalalt"
-		icon_closed = "maintmedicalalt"
-		icon_opened = "maintmedicalaltopen"
-
-		return list(
-			/obj/random/maint/medicalalt = rand(1,8)
-		)
-
 	return list(
 		/obj/random/maint/medical = rand(1,8)
+	)
+
+/obj/structure/closet/maintenance/medicalalt
+	icon_state = "maintmedicalalt"
+	icon_closed = "maintmedicalalt"
+	icon_opened = "maintmedicalaltopen"
+
+/obj/structure/closet/maintenance/medicalalt/prefilled
+
+/obj/structure/closet/maintenance/medicalalt/prefilled/WillContain()
+	return list(
+		/obj/random/maint/medicalalt = rand(1,8)
 	)
 
 // /obj/structure/closet/maintenance/medical/prefilled/New()
