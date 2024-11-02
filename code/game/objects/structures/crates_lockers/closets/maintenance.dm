@@ -33,7 +33,7 @@
 
 /obj/structure/closet/maintenance/medical/prefilled/WillContain()
 	return list(
-		/obj/random/closet/maint/medical = rand(1,8)
+		/obj/random/closet/maint/medical = rand(2,8)
 	)
 
 /obj/structure/closet/maintenance/medicalalt
@@ -45,7 +45,7 @@
 
 /obj/structure/closet/maintenance/medicalalt/prefilled/WillContain()
 	return list(
-		/obj/random/closet/maint/medicalalt = rand(1,8)
+		/obj/random/closet/maint/medicalalt = rand(2,8)
 	)
 
 /obj/structure/closet/maintenance/fridge
