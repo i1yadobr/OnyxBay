@@ -601,7 +601,7 @@
 
 /obj/random/closet/maint/cargo
 	name = "random maintenance cargo trash"
-	icon_state = "landmark_maint"
+	icon_state = "landmark_maint_cargo"
 
 /obj/random/closet/maint/cargo/spawn_choices()
 	return list(/obj/random/junk = 10,
@@ -637,6 +637,7 @@
 				/obj/item/device/taperecorder = 10,
 				/obj/item/grenade/smokebomb = 5,
 				/obj/item/clothing/glasses/sunglasses = 5,
+				/obj/item/clothing/shoes/jackboots = 3,
 				/obj/item/clothing/head/helmet = 2,
 				/obj/item/clothing/suit/armor/vest = 2,
 				/obj/item/melee/baton = 1,
@@ -665,6 +666,7 @@
 
 /obj/random/closet/maint/hydro/spawn_choices()
 	return list(/obj/random/junk = 10,
+				/obj/random/pottedplant = 6,
 				/obj/item/storage/plants = 6,
 				/obj/item/clothing/accessory/armband/hydro = 5,
 				/obj/item/clothing/gloves/thick/botany = 5,
