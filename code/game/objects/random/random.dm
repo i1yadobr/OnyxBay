@@ -523,7 +523,7 @@
 /obj/random/closet/maint
 	name = "random maintenance closet trash"
 	icon_state = "landmark_maint"
-	spawn_nothing_percentage = null
+	spawn_nothing_percentage = 50
 
 /obj/random/closet/maint/spawn_choices()
 	return list(/obj/random/junk = 10,
@@ -584,6 +584,7 @@
 /obj/random/closet/maint/fridge
 	name = "random maintenance fridge trash"
 	icon_state = "landmark_maint_fridge"
+	spawn_nothing_percentage = 66
 
 /obj/random/closet/maint/fridge/spawn_choices()
 	return list(/obj/random/snack = 10,
