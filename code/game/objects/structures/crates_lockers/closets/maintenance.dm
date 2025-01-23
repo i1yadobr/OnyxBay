@@ -36,6 +36,9 @@
 		/obj/random/closet/maint/medical = 8
 	)
 
+//I couldn't think of a better solution other than to do it this way.
+//You could do via a toggle for “/obj/structure/closet/maintenance/medical”, or something similar.
+//But I'll leave it as it is for now. -i1yadobr
 /obj/structure/closet/maintenance/medicalalt
 	icon_state = "maintmedicalalt"
 	icon_closed = "maintmedicalalt"
